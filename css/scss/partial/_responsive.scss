@@ -1,0 +1,147 @@
+@media only screen and (max-width: 991px) {
+    .skills-box {
+        h1 {
+            @include font-size($size-36);
+        } 
+    }
+    
+    .reg-progress {
+        background-position: center 30px;
+        
+        li {
+            width: 120px;
+            
+            a {
+                height: 60px;
+                width: 60px;
+            }
+            
+            img {
+                width: 100%;
+            }
+        }
+    }
+    
+    .inspried .inspired-box {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    
+    .footer-box {
+        text-align: center;
+        margin-bottom: 20px;
+        
+        .footer-list {
+            margin: 0 auto;
+        }
+        
+        .footer-social {
+            margin: 0 auto;
+        }
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    nav {
+        position: relative;
+    }
+    
+    .menu-button {
+        @include font-size($size-40);
+        cursor: pointer;
+        display: block;
+        height: 30px;
+        position: absolute;
+        width: 30px;
+        z-index: 1;
+        top: 20px;
+        right: 20px;
+    }
+    
+    .navbar {
+        display: none;
+        background: $btnbg;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        right: 30px;
+        top: 50px;
+        width: 50%;
+        
+        li {
+            display: list-item;
+            padding: 10px;
+            
+            .signin {
+                background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+                border: medium none;
+                border-radius: 0;
+                padding: 0;
+            }
+            
+            a {
+                width: 100%;
+                display: block;
+            }
+        }
+    }
+    
+    .skills-box-form {
+        display: inline-block;
+        width: 100%;
+    }
+    
+    .skills-box .field-group {
+        width: 100%;
+    }
+    
+    .skills-find {
+        border-radius: 6px;
+    }
+    
+    .btn-skills {
+        border-radius: 6px;
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        margin-top: 10px;
+    }
+    
+    .reg-progress {
+        background-image: url("../images/line-mobile.png");
+        background-position: center 0;
+        width: 60%;
+        padding-top: 40px;
+        
+        li {
+            width: 100%;
+            
+            span {
+                background-color: $howworks;
+                margin: 10px 0 40px 0;
+                padding: 10px;
+            }
+        }
+    }
+    
+}
+
+@media only screen and (max-width: 520px) {
+    .skills-box {
+        width: 90%;
+    
+        h1 {
+            @include font-size($size-28);
+            margin-bottom: 20px;
+        }
+    }
+    
+    .container {
+        min-width: 320px;
+    }
+    
+    .member-logged .add-skills li {
+        display: list-item;
+        padding: 10px;
+    }
+}

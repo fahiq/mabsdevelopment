@@ -1,0 +1,32 @@
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    border-radius: $radius;
+    background-clip: padding-box;  /* stops bg color from leaking outside the border: */
+}
+
+@mixin font-size($sizeValue: 16){
+    font-size: ($sizeValue) + px;
+    font-size: ($sizeValue/16) + rem;
+}
+
+@mixin myriadpro {
+    font-family: 'PT Sans', sans-serif;
+}
+    
+@mixin list {
+    list-style-type: none;
+    list-style-image: none;
+    display: table;
+}
+
+@mixin clearfix() {
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+    
